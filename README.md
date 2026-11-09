@@ -1,66 +1,94 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 Jurnal Belajar SD Andreas Semarang - Fase B Kelas 3 SD 🎨
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi **Scrapbook Digital & Management CP/TP** interaktif berbasis web untuk mendukung implementasi **Kurikulum Merdeka (Fase B Kelas 3 SD)** yang diselaraskan dengan standar **BSKAP No. 032/H/KR/2024**. Aplikasi ini memudahkan Guru dan Admin Sekolah dalam mengelola Tujuan Pembelajaran (TP), mengumpulkan karya/portofolio digital siswa, menyusun Projek P5, serta membagikan notifikasi perkembangan belajar secara langsung ke WhatsApp Orang Tua Siswa.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- 🎨 **Papan Scrapbook Karya Digital:**
+  - Menampilkan karya siswa lengkap dengan foto, judul, catatan pengamatan guru, dan atribut P5.
+  - Fitur pencarian dan filter interaktif berdasarkan mata pelajaran & nama siswa.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- 📖 **Pusat Modul P5 & Manajemen CP/TP Dinamis:**
+  - Support penuh input (CRUD) Tujuan Pembelajaran (TP) untuk **seluruh mata pelajaran** (IPAS, Matematika, Bahasa Indonesia, Pendidikan Pancasila, Seni & Budaya, dll).
+  - Dilengkapi draf **Modul Projek P5 Terintegrasi** (Tema *Gaya Hidup Berkelanjutan* & *Kearifan Lokal*).
 
-## Learning Laravel
+- 📱 **Integrasi WhatsApp Direct Link (100% Gratis):**
+  - Penyimpanan kontak nomor WhatsApp Orang Tua pada profil siswa.
+  - Tombol 1-klik untuk mengirim notifikasi karya terbaru ananda langsung ke WhatsApp Orang Tua tanpa biaya langganan API.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- 👤 **Manajemen Profil & Akses Guru/Admin:**
+  - Pengelolaan data siswa Kelas 3A (NISN, Nama, Kelas, No. WA).
+  - Mode proteksi login untuk akses edit/tambah data.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Stack Teknologi
 
-## Laravel Sponsors
+- **Backend:** Laravel 10/11 (PHP 8.1+)
+- **Frontend:** Inertia.js + React.js
+- **Styling:** Tailwind CSS
+- **Iconography:** Lucide React
+- **Database:** MySQL / MariaDB (Laragon)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🚀 Panduan Instalasi Lokal (Laragon / XAMPP)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek di komputer lokal Anda:
 
-## Contributing
+### 1. Clone Repositori
+```bash
+git clone [https://github.com/username/scrapboook-tigasd.git](https://github.com/username/scrapbook-tigasd.git)
+cd scrapbook-tigasd
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 2. Instal Dependensi PHP & JavaScript
+```bash
+composer install
+npm install
 
-## Code of Conduct
+### 3. Salin & Konfigurasi Berkas Environment
+```bash
+cp .env.example .env
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Buka berkas .env dan sesuaikan pengaturan database Anda:
+```code snippet
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=scrapbook_tigasd
+DB_USERNAME=root
+DB_PASSWORD=
 
-## Security Vulnerabilities
+### 4. Generate Application Key & Eksekusi Migrasi Database
+```bash
+php artisan key:generate
+php artisan migrate
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 5. Buat Symbolic Link Storage (Untuk Berkas Foto)
+```bash
+php artisan storage:link
 
-## License
+### 6. Jalankan Server Pengembangan
+Buka dua jendela terminal terpisah:
+Terminal 1 (Laravel Dev Server):
+```bash
+php artisan serve
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Terminal 2 (Vite Frontend Build):
+```bash
+npm run dev
+
+Buka browser Anda di http://127.0.0.1:8000 atau domain lokal Laragon Anda http://scrapbook-tigasd.test
+
+📋 Struktur Tabel Utama Database
+students: Menyimpan data NISN, nama siswa, kelas, dan nomor WhatsApp orang tua.
+subjects: Menyimpan master mata pelajaran Kurikulum Merdeka.
+learning_objectives: Menyimpan kode, judul/materi, dan deskripsi Tujuan Pembelajaran (TP/CP).
+scrapbook_entries: Menyimpan karya siswa (foto, deskripsi, sticker, dimensi P5).
+
+📄 Lisensi & Standar Kurikulum
+Proyek ini dikembangkan mengacu pada Keputusan Kepala BSKAP Nomor 032/H/KR/2024 mengenai Capaian Pembelajaran pada Kurikulum Merdeka.
+
+Developed with ❤️ for Pendidikan Indonesia
